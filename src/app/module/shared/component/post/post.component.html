@@ -1,0 +1,13 @@
+
+<form [formGroup]="employeeForm" (submit)="submit()" class='form'>
+    <input type="text" placeholder="id"formControlName="id"> <br><br>
+    <input type="text" placeholder="name" formControlName="name"><br><br>
+    <input type="text"  placeholder="email" formControlName="email"><br><br>
+    <input type="text" placeholder="password" formControlName="password"><br><br>
+    <button type="submit">submit</button><br><br>
+</form> 
+
+<ul>
+    <li *ngFor="let employee of employees">{{employee|json}}</li>
+</ul>
+ 
